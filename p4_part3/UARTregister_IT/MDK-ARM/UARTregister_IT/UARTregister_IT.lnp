@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"uartregister_it\startup_stm32f103xb.o"
+"uartregister_it\main.o"
+"uartregister_it\gpio.o"
+"uartregister_it\tim.o"
+"uartregister_it\usart.o"
+"uartregister_it\stm32f1xx_it.o"
+"uartregister_it\stm32f1xx_hal_msp.o"
+"uartregister_it\stm32f1xx_hal_gpio_ex.o"
+"uartregister_it\stm32f1xx_hal_tim.o"
+"uartregister_it\stm32f1xx_hal_tim_ex.o"
+"uartregister_it\stm32f1xx_hal.o"
+"uartregister_it\stm32f1xx_hal_rcc.o"
+"uartregister_it\stm32f1xx_hal_rcc_ex.o"
+"uartregister_it\stm32f1xx_hal_gpio.o"
+"uartregister_it\stm32f1xx_hal_dma.o"
+"uartregister_it\stm32f1xx_hal_cortex.o"
+"uartregister_it\stm32f1xx_hal_pwr.o"
+"uartregister_it\stm32f1xx_hal_flash.o"
+"uartregister_it\stm32f1xx_hal_flash_ex.o"
+"uartregister_it\stm32f1xx_hal_exti.o"
+"uartregister_it\stm32f1xx_hal_uart.o"
+"uartregister_it\system_stm32f1xx.o"
+--strict --scatter "UARTregister_IT\UARTregister_IT.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "UARTregister_IT.map" -o UARTregister_IT\UARTregister_IT.axf
